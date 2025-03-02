@@ -9,8 +9,10 @@ declare module "@remix-run/node" {
 }
 
 export default defineConfig({
+  base: '/spa-demo/',
   plugins: [
     remix({
+      basename: '/spa-demo/',
       ssr: false,
       future: {
         v3_fetcherPersist: true,
